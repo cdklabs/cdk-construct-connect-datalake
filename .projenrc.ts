@@ -1,7 +1,6 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-
 import { CdklabsConstructLibrary } from "cdklabs-projen-project-types";
 
 const project = new CdklabsConstructLibrary({
