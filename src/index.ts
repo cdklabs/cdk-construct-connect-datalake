@@ -130,8 +130,8 @@ export class DataLakeAccess extends Construct {
       exportName: `${id}Errors`,
     });
     Annotations.of(this).addWarning(
-        `DataLakeAccess reports setup errors via the stack output. ` +
-        `Check output '${id}Errors' after each deployment to verify the setup completed successfully.`
+      `DataLakeAccess reports setup errors via the stack output. ` +
+        `Check output '${id}Errors' after each deployment to verify the setup completed successfully.`,
     );
   }
 
