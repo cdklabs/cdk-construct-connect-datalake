@@ -1,11 +1,6 @@
 {
   "dependencies": [
     {
-      "name": "@stylistic/eslint-plugin",
-      "version": "^2",
-      "type": "build"
-    },
-    {
       "name": "@types/jest",
       "type": "build"
     },
@@ -29,11 +24,19 @@
       "type": "build"
     },
     {
+      "name": "eslint-config-prettier",
+      "type": "build"
+    },
+    {
       "name": "eslint-import-resolver-typescript",
       "type": "build"
     },
     {
       "name": "eslint-plugin-import",
+      "type": "build"
+    },
+    {
+      "name": "eslint-plugin-prettier",
       "type": "build"
     },
     {
@@ -69,7 +72,11 @@
     },
     {
       "name": "jsii",
-      "version": "~5.7",
+      "version": "~5.9",
+      "type": "build"
+    },
+    {
+      "name": "prettier",
       "type": "build"
     },
     {
@@ -89,6 +96,42 @@
       "type": "build"
     },
     {
+      "name": "@aws-sdk/client-cloudformation",
+      "type": "bundled"
+    },
+    {
+      "name": "@aws-sdk/client-connect",
+      "type": "bundled"
+    },
+    {
+      "name": "@aws-sdk/client-glue",
+      "type": "bundled"
+    },
+    {
+      "name": "@aws-sdk/client-lakeformation",
+      "type": "bundled"
+    },
+    {
+      "name": "@aws-sdk/client-ram",
+      "type": "bundled"
+    },
+    {
+      "name": "@aws-sdk/client-sts",
+      "type": "bundled"
+    },
+    {
+      "name": "@aws-sdk/types",
+      "type": "bundled"
+    },
+    {
+      "name": "@types/aws-lambda",
+      "type": "bundled"
+    },
+    {
+      "name": "aws-lambda",
+      "type": "bundled"
+    },
+    {
       "name": "@aws-cdk/integ-runner",
       "version": "latest",
       "type": "devenv"
@@ -100,12 +143,12 @@
     },
     {
       "name": "aws-cdk-lib",
-      "version": "^2.1.0",
+      "version": "^2.240.0",
       "type": "peer"
     },
     {
       "name": "constructs",
-      "version": "^10.0.5",
+      "version": "^10.5.1",
       "type": "peer"
     }
   ],
