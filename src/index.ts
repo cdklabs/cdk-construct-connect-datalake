@@ -129,6 +129,10 @@ export class DataLakeAccess extends Construct {
       value: dataLakeCustomResource.getAttString("errors"),
       exportName: `${id}Errors`,
     });
+    Annotations.of(this).addWarning(
+        `DataLakeAccess reports setup errors via the stack output. ` +
+        `Check output '${id}Errors' after each deployment to verify the setup completed successfully.`
+    );
   }
 
   /**

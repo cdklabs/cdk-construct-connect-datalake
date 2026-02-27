@@ -244,6 +244,9 @@ When deploying to the same account as the Connect instance, all steps execute wi
 
 ## Troubleshooting
 
+**Partial failures during deployment**
+- If some workflow steps fail during create or update operations, the stack deployment will still show as successful. Error details for these partial failures are available in the CloudFormation stack outputs.
+
 **RAM resource share has expired**
 - Resource shares for new dataset associations can consolidate into existing AWS RAM shares, even if expired. Delete
   each construct that references the target account, confirm the associated resources are removed, then redeploy using
