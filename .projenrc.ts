@@ -13,7 +13,6 @@ const project = new CdklabsConstructLibrary({
   devDeps: ["cdklabs-projen-project-types"],
   name: "@cdklabs/cdk-construct-connect-datalake",
   projenrcTs: true,
-  release: false,
   bundledDeps: [
     "@aws-sdk/client-lakeformation",
     "@aws-sdk/client-glue",
