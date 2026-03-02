@@ -12,6 +12,8 @@
     ".github/workflows/upgrade-dev-deps.yml",
     ".github/workflows/upgrade.yml",
     ".gitignore",
+    ".prettierignore",
+    ".prettierrc.json",
     ".projen/deps.json",
     ".projen/files.json",
     ".projen/tasks.json",

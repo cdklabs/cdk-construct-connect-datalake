@@ -1,5 +1,6 @@
 {
   "name": "@cdklabs/cdk-construct-connect-datalake",
+  "description": "Construct library for Amazon Connect Data Lake",
   "repository": {
     "type": "git",
     "url": "https://github.com/cdklabs/cdk-construct-connect-datalake.git"
@@ -42,35 +43,62 @@
   "devDependencies": {
     "@aws-cdk/integ-runner": "latest",
     "@aws-cdk/integ-tests-alpha": "latest",
-    "@stylistic/eslint-plugin": "^2",
     "@types/jest": "^30.0.0",
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
-    "aws-cdk-lib": "2.1.0",
+    "aws-cdk-lib": "2.240.0",
     "cdklabs-projen-project-types": "^0.3.16",
-    "constructs": "10.0.5",
+    "constructs": "10.5.1",
     "eslint": "^9",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.5",
     "jest": "^30.2.0",
     "jest-junit": "^16",
-    "jsii": "~5.7",
+    "jsii": "~5.9",
     "jsii-diff": "^1.127.0",
     "jsii-docgen": "^10.5.0",
     "jsii-pacmak": "^1.127.0",
     "jsii-rosetta": "^5.9.32",
+    "prettier": "^3.8.1",
     "projen": "^0.99.17",
     "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.1.0",
-    "constructs": "^10.0.5"
+    "aws-cdk-lib": "^2.240.0",
+    "constructs": "^10.5.1"
   },
+  "dependencies": {
+    "@aws-sdk/client-cloudformation": "^3.999.0",
+    "@aws-sdk/client-connect": "^3.999.0",
+    "@aws-sdk/client-glue": "^3.999.0",
+    "@aws-sdk/client-lakeformation": "^3.999.0",
+    "@aws-sdk/client-ram": "^3.999.0",
+    "@aws-sdk/client-sts": "^3.999.0",
+    "@aws-sdk/types": "^3.973.4",
+    "@types/aws-lambda": "^8.10.161",
+    "aws-lambda": "^1.0.7"
+  },
+  "bundledDependencies": [
+    "@aws-sdk/client-cloudformation",
+    "@aws-sdk/client-connect",
+    "@aws-sdk/client-glue",
+    "@aws-sdk/client-lakeformation",
+    "@aws-sdk/client-ram",
+    "@aws-sdk/client-sts",
+    "@aws-sdk/types",
+    "@types/aws-lambda",
+    "aws-lambda"
+  ],
   "keywords": [
-    "cdk"
+    "aws",
+    "cdk",
+    "connect",
+    "datalake"
   ],
   "engines": {
     "node": ">= 18.12.0"
@@ -80,6 +108,9 @@
   "version": "0.0.0",
   "jest": {
     "coverageProvider": "v8",
+    "moduleNameMapper": {
+      "^@src/(.*)$": "<rootDir>/src/$1"
+    },
     "testMatch": [
       "<rootDir>/@(src|test)/**/*(*.)@(spec|test).ts?(x)",
       "<rootDir>/@(src|test)/**/__tests__/**/*.ts?(x)",

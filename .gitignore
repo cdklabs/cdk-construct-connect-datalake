@@ -31,11 +31,15 @@ jspm_packages/
 *.tgz
 .yarn-integrity
 .cache
+cdk.out
+.idea/
 /test-reports/
 junit.xml
 /coverage/
 !/.github/workflows/build.yml
 !/.github/pull_request_template.md
+!/.prettierignore
+!/.prettierrc.json
 !/test/
 !/tsconfig.dev.json
 !/src/
