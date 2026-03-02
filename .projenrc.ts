@@ -7,6 +7,7 @@ const project = new CdklabsConstructLibrary({
   author: "Amazon Web Services",
   authorAddress: "https://aws.amazon.com",
   description: "Construct library for Amazon Connect Data Lake",
+  private: false,
   keywords: ["aws", "cdk", "connect", "datalake"],
   cdkVersion: "2.240.0",
   defaultReleaseBranch: "main",
