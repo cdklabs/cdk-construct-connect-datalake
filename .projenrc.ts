@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { CdklabsConstructLibrary } from "cdklabs-projen-project-types";
+import { cdk } from "projen";
 
 const project = new CdklabsConstructLibrary({
   author: "Amazon Web Services",
@@ -33,6 +34,8 @@ const project = new CdklabsConstructLibrary({
     },
   },
   eslint: true,
+  // tsc adds `pathsBasePath` to the parsed options when `paths` is set, which the strict rule set rejects
+  validateTsconfig: cdk.ValidateTsconfig.MINIMAL,
   tsconfig: {
     compilerOptions: {
       baseUrl: ".",
