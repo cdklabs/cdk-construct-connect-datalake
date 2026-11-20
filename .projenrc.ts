@@ -1,8 +1,8 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-import { cdk } from "projen";
 import { CdklabsConstructLibrary } from "cdklabs-projen-project-types";
+import { cdk } from "projen";
 
 const project = new CdklabsConstructLibrary({
   author: "Amazon Web Services",
