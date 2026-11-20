@@ -4,6 +4,8 @@
 
 ### DataLakeAccess <a name="DataLakeAccess" id="@cdklabs/cdk-construct-connect-datalake.DataLakeAccess"></a>
 
+- *Implements:* constructs.IConstruct, constructs.IDependable
+
 Automates Amazon Connect Data Lake integration setup and management.
 
 This construct simplifies the process of associating Amazon Connect analytics datasets with AWS data lake services,
