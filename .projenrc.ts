@@ -11,7 +11,7 @@ const project = new CdklabsConstructLibrary({
   private: false,
   enablePRAutoMerge: true,
   keywords: ["aws", "cdk", "connect", "datalake"],
-  cdkVersion: "2.240.0",
+  cdkVersion: "2.260.0",
   defaultReleaseBranch: "main",
   devDeps: ["cdklabs-projen-project-types"],
   name: "@cdklabs/cdk-construct-connect-datalake",
